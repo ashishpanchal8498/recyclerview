@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">shopui</string>
+    <string name="backarrowimage">backarrowimage</string>
+    <string name="toolbarLayout">toolbarLayout</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tablayout">tablayout</string>
+    <string name="rain1">rain1</string>
+    <string name="Rain_with_umbrella">Rain with umbrella</string>
+    <string name="Rain_Rain_Come_Soon">Rain Rain Come Soon</string>
+    <string name="searchimage">searchimage</string>
+    <string name="search">Search</string>
+    <string name="text">Text</string>
+
+</resources>

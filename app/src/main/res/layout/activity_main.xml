@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#262C3A"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="#191D26"
+        android:contentDescription="@string/toolbarLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/backarrowimage"
+            android:src="@drawable/backarrowimage" />
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:background="#191D26"
+            android:contentDescription="@string/searchimage"
+            android:src="@drawable/search_image"
+            tools:ignore="TouchTargetSizeCheck"
+            tools:layout_editor_absoluteX="41dp"
+            tools:layout_editor_absoluteY="1dp" />
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:hint="@string/search"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textColorHint="#524E51"
+            android:inputType="text"
+            android:importantForAutofill="no"
+            android:background="@null"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="#262C3A"
+        android:contentDescription="@string/tablayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarLayout"
+        tools:ignore="VisualLintBounds">
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewpagertwo"
+        android:layout_width="match_parent"
+        android:layout_height="625dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout"
+        tools:ignore="MissingClass,VisualLintBounds">
+    </androidx.viewpager2.widget.ViewPager2>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="640dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

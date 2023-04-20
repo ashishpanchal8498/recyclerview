@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="15dp"
+    app:cardBackgroundColor="#262C3A">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        android:background="#303848">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:importantForAutofill="auto"
+            app:srcCompat="@drawable/rain1"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/Rain_with_umbrella"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textviewrain"
+                android:text="@string/text"
+                android:textSize="8pt"
+                android:layout_marginStart="4dp"
+                android:textColor="@color/white"
+                android:gravity="left"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textviewraindetail"
+                android:text="@string/text"
+                android:textSize="6pt"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="4dp"
+                android:gravity="left"
+                android:textColor="#93969D"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content" />
+
+            <ImageButton
+                android:id="@+id/sharebutton"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginStart="220dp"
+                android:background="#303848"
+                android:src="@drawable/ic_share"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
